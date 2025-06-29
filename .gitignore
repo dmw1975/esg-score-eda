@@ -1,0 +1,123 @@
+# Data files - exclude processed and interim files
+data/processed/
+data/interim/
+data/*.csv
+data/score.csv
+data/combined_df_for_ml_models.csv
+data/combined_df_for_linear_models.csv
+data/combined_df_for_tree_models.csv
+
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+# Exclude notebooks directory (development only)
+notebooks/
+/notebooks/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Visualizations output - exclude all generated files
+visualizations/
+!visualizations/.gitkeep
+
+# Log files
+*.log
+outlier_detection.log
+missing_values_analysis.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# IDE files
+.vscode/
+.idea/
+
+# Archive directories
+archive/
+archive_*/
+**/archive/
+**/archive_*/
+*.archive/
+archives/
+backup/
+backup_*/
+old/
+deprecated/
+local_archive_*/
+
+# Claude Code specific - keep locally (NOT excluded)
+# CLAUDE.md is tracked in git per user request
+.claude/
+claude.md
+
+# Old documentation files (can be deleted)
+file_inventory.md
+file_audit_report.md
+archiving_strategy.md
+implementation_prompts.md
+verification_checklist.md
+
+# Test files (to be archived)
+test_*.py
+
+# Test results directory
+test_results/
+
+# Example data directory
+example_data/
+
+# Temporary utility scripts
+# archive_files.py - KEPT per user request
+cleanup_repo.sh
+move_isolation_forest_files.sh
+prepare_for_github.sh
+
+# Temporary documentation files
+ARCHIVE_README.txt
+EXECUTION_SUMMARY.md
+FEATURE_TRANSFORMATION_FIX_COMPLETE.md
+ML_TRANSFORMATION_FIX_REPORT.md
+final_validation_report.md
+plan.md
+location_update_notes.txt
+requirement-dev.txt
+
