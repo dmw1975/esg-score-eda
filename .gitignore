@@ -1,13 +1,10 @@
 # Data files - exclude processed and interim files
 data/processed/
 data/interim/
-data/*.csv
-data/score.csv
+# Exclude ALL CSV files in data directory and subdirectories
+data/**/*.csv
 # Exclude generated JSON metadata files
 data/**/*.json
-data/combined_df_for_ml_models.csv
-data/combined_df_for_linear_models.csv
-data/combined_df_for_tree_models.csv
 
 
 # Jupyter Notebook
